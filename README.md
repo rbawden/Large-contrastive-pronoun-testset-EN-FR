@@ -25,10 +25,17 @@ This will produce four files:
 - OUTPUT_PREFIX.context.src - contextual source sentences
 - OUTPUT_PREFIX.context.trg - contextual target sentences
 - OUTPUT_PREFIX.current.src - current source sentences
-- OUTPUT_PREFIX.current.trg current target sentences
+- OUTPUT_PREFIX.current.trg - current target sentences
 
 N.B. `NUM_CONTEXT` is the number of contextual sentences to be written into the context file for each current sentence
 
 
+## Evaluate the sentences
+
+1. Score each of the current sentences (contrastive ones) using your MT system and output one score per sentence
+2. Evaluate as follows (using the ContraPro evaluation script):
+
+```
+python scripts/evaluate.py --reference JSON_FILE --scores SCORE_FILE
 
 
