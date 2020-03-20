@@ -1,8 +1,6 @@
 # Large-scale contrastive pronoun test sets for EN-to-FR
 
-This repository contains large-scale contrastive test sets for the evaluation of the machine translation (MT) of anaphoric pronouns 'it' and 'they' from English to French. 
-
-They are constructed using the similar techniques to [https://github.com/ZurichNLP/ContraPro](https://github.com/ZurichNLP/ContraPro) and are compatible with their evaluation protocol.
+This repository contains large-scale contrastive test sets for the evaluation of the machine translation (MT) of anaphoric pronouns 'it' and 'they' from English to French. They use the dataset creation and evaluation protocols of [https://github.com/ZurichNLP/ContraPro](ContraPro datasets) (Müller et al., 2018), adapted to English-to-French, with some slight modifications to the dataset creation process.
 
 There are two datasets, with examples extracted from (i) OpenSubtitles2018 and (ii) UN-corpus.
 
@@ -16,14 +14,14 @@ TODO
 
 ## Brief summary
 
-The idea of a contrastive test set is to test MT models on their capacity to rank a correct translation higher than an incorrect one. The test sets are therefore made up of pairs of translations, one correct and one incorrect (contrastive).
+Contrastive test sets are used to test MT models on their capacity to rank a correct translation higher than an incorrect one. The test sets are therefore made up of pairs of translations, one correct and one incorrect (contrastive).
 
-These test sets are designed to evaluate anaphoric pronoun translation from English to French. This concerns selected occurrences of 'it' and 'they' that correspond to translations in the French sentence 'il', 'elle', 'ils' or 'elles'.
+These test sets are designed to evaluate anaphoric pronoun translation from English to French. This concerns selected occurrences of the English pronouns 'it' and 'they' that correspond to the translations 'il', 'elle', 'ils' or 'elles' in the corresponding French translation.
 
 - it (singular) -> 'il' (masculine) or 'elle' (feminine)
 - they (plural) -> 'ils' (masculine) or 'elles' (feminine)
 
-The correct translation of these English pronouns depends on the translation of the entity they refer to in the French texts (the gender must match the gender of the noun they refer to). This noun appear outside of the current sentence, and therefore the test sets must also include context. In most cases this will correspond to preceding context.
+The correct translation of these English pronouns depends on the translation of the entity they refer to in the French texts (the pronoun's gender must match the gender of the noun they refer to). This noun can appear outside the current sentence, and therefore the test sets also include context. In most cases this will correspond to preceding context.
 
 The details of the creation of the two datasets are given [below](#Dataset-creation-details).
 
