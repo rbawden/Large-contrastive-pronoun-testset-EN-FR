@@ -25,8 +25,7 @@ These test sets are designed to evaluate anaphoric pronoun translation from Engl
 
 The correct translation of these English pronouns depends on the translation of the entity they refer to in the French texts (the gender must match the gender of the noun they refer to). This noun appear outside of the current sentence, and therefore the test sets must also include context. In most cases this will correspond to preceding context.
 
-The details of the creation of the datasets is given [below](#Dataset-creation-details).
-
+The details of the creation of the two datasets are given [below](#Dataset-creation-details).
 
 ## Usage
 
@@ -52,10 +51,10 @@ python scripts/extract_current_and_context.py JSON_FILE documents/ OUTPUT_PREFIX
 
 This will produce four files:
 
-- OUTPUT_PREFIX.context.src - contextual source sentences
-- OUTPUT_PREFIX.context.trg - contextual target sentences
-- OUTPUT_PREFIX.current.src - current source sentences
-- OUTPUT_PREFIX.current.trg - current target sentences
+- `OUTPUT_PREFIX.context.src` - contextual source sentences
+- `OUTPUT_PREFIX.context.trg` - contextual target sentences
+- `OUTPUT_PREFIX.current.src` - current source sentences
+- `OUTPUT_PREFIX.current.trg` - current target sentences
 
 N.B. `NUM_CONTEXT` is the number of contextual sentences to be written into the context file for each current sentence
 
