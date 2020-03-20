@@ -40,7 +40,7 @@ def get_text_and_context(examples, document_dir, prefix, csize=1):
             context = get_context(docsents, segmentid, csize)
 
             # contrastive translation -> this needs to be detokenised...
-            contrastive = ex['errors']['contrastive']
+            contrastive = ex['errors'][0]['contrastive']
 
             # print out for real example
             scur.write(current_sent[0].strip() + '\n')
