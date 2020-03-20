@@ -4,6 +4,18 @@
 
 ## Extract sentences for evaluation
 
+1. Prepare dataset documents (either OpenSubtitles2018 or UN corpus)
+
+```
+cd {Opensubs,UN-corpus}
+`bash setup_opensubs.sh`
+```
+This script been taken from [https://github.com/ZurichNLP/ContraPro](https://github.com/ZurichNLP/ContraPro) and adapted to English-French.
+This will create in the directory a `documents/` folder with films structured by year
+
+
+2. Extract current sentences and contextual sentences
+
 `python scripts/extract_current_and_context.py JSON_FILE documents/ OUTPUT_PREFIX -c NUM_CONTEXT`
 
 This will produce four files:
@@ -14,8 +26,7 @@ This will produce four files:
 - OUTPUT_PREFIX.current.trg current target sentences
 
 N.B. `NUM_CONTEXT` is the number of contextual sentences to be written into the context file for each current sentence
-The documents/ directory contains all films structured by year and can be created as follows:
 
-`bash setup_opensubs.sh`
 
-which has been taken from [https://github.com/ZurichNLP/ContraPro](https://github.com/ZurichNLP/ContraPro) and adapted to English-French.
+
+
