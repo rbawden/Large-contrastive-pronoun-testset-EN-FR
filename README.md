@@ -25,7 +25,7 @@ These test sets are designed to evaluate anaphoric pronoun translation from Engl
 
 The correct translation of these English pronouns depends on the translation of the entity they refer to in the French texts (the gender must match the gender of the noun they refer to). This noun appear outside of the current sentence, and therefore the test sets must also include context. In most cases this will correspond to preceding context.
 
-The details of the creation of the datasets is given [Dataset-creation-details](below).
+The details of the creation of the datasets is given [below](#Dataset-creation-details).
 
 
 ## Usage
