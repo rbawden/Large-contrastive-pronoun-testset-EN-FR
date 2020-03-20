@@ -16,7 +16,9 @@ This will create in the directory a `documents/` folder with films structured by
 
 2. Extract current sentences and contextual sentences
 
-`python scripts/extract_current_and_context.py JSON_FILE documents/ OUTPUT_PREFIX -c NUM_CONTEXT`
+```
+python scripts/extract_current_and_context.py JSON_FILE documents/ OUTPUT_PREFIX -c NUM_CONTEXT
+```
 
 This will produce four files:
 
