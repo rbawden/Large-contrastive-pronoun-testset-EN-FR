@@ -36,7 +36,7 @@ N.B. `NUM_CONTEXT` is the number of contextual sentences to be written into the 
 2. Evaluate as follows (using the ContraPro evaluation script):
 
 ```
-python scripts/evaluate.py --reference JSON_FILE --scores SCORE_FILE [--maximise]
+python scripts/evaluate.py --reference JSON_FILE --scores SCORE_FILE [--maximize]
 ```
-N.B. use `--maximise` if higher scores are better and exclude it if lower scores are better.
+N.B. use `--maximize` if higher scores are better and exclude it if lower scores are better.
 
