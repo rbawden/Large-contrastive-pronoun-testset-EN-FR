@@ -1,5 +1,13 @@
 # Large-scale contrastive pronoun test sets for EN-to-FR
 
+This repository contains large-scale contrastive test sets for the evaluation of the machine translation (MT) of anaphoric pronouns 'it' and 'they' from English to French. 
+
+They are constructed using the similar techniques to [https://github.com/ZurichNLP/ContraPro](https://github.com/ZurichNLP/ContraPro) and are compatible with their evaluation protocol.
+
+There are two datasets, with examples extracted from (i) OpenSubtitles2018 and (ii) UN-corpus.
+
+The idea of a contrastive test set is to test MT models on their capacity to rank a correct translation higher than an incorrect one. The test sets are therefore made up of pairs of translations, one correct and one incorrect (contrastive).
+
 
 
 ## Extract sentences for evaluation
