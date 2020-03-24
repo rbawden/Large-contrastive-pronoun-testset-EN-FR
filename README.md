@@ -29,6 +29,8 @@ The details of the creation of the two datasets are given [below](#Dataset-creat
 
 To use the test sets, first extract sentences for evaluation, then score the extracted sentences and evaluate using the script provided (details below).
 
+The extracted sentences can be found in the `extracted/` folders of each dataset, so you do not need to rerun the process. However, be aware that your MT model should not be trained on the same data as used for testing. See `{OpenSubs,UN-corpus}/docids.selected` for the list of documents included in the test sets.
+
 ### Extract sentences for evaluation
 
 1. Prepare dataset documents (either OpenSubtitles2018 or UN corpus)
