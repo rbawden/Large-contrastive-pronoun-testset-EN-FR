@@ -70,4 +70,18 @@ N.B. use `--maximize` if higher scores are better and exclude it if lower scores
 
 ## Dataset creation details
 
-TODO
+Two different procedures are used for the OpenSubtitles and the UN test sets, due to the different sizes (we filter less for the smaller UN corpus).
+
+### OpenSubs test set
+
+We follow a similar process to the original ContraPro dataset process, with minor modifications:
+
+1.  Instances of 'it' and 'they' and their antecedents are detected using [https://github.com/huggingface/neuralcoref](NeuralCoref).  Unlike Müller et al (2018), we only run English coreference dueto a lack of an adequate French tool.
+2.  Pronouns  are  aligned  to  their  French  pro-noun translations (il,elle,ilsandelles) usingFastAlign (Dyer et al., 2013)
+3. Examples  are  filtered  to  only  include  sub-ject pronouns (using Spacy5) with a nominalantecedent, aligned to a nominal French an-tecedent matching the French pronoun’s gen-der.  We remove examples whose antecedentis  more  than  five  sentences  away  to  avoidcases of imprecise coreference resolution.
+4. Contrastive translations are created by inverting the French pronoun gender. As in (Müller et al.,  2018),  we also modify the gender of words that in with the pronoun (e.g. adjectives and some past participles) using the Lefff lexicon (Sagot, 2010)).
+
+### UN corpus test set
+
+1. From the target sentences alone, detect instances of 'il', 'elle', 'ils' and 'elles' that are  subject  pronouns  (using  Spacy)  and  not impersonal (using ILIMP (Danlos, 2005))
+2. Create contrastive sentences as with the OpenSubs test set
