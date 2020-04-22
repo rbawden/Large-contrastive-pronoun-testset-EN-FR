@@ -1,4 +1,4 @@
-# Large-scale contrastive pronoun test sets for EN-to-FR
+# Large-scale contrastive pronoun test set for EN-to-FR
 
 This repository contains a large-scale contrastive test set for the evaluation of the machine translation (MT) of anaphoric pronouns 'it' and 'they' from English to French, created from OpenSubtitles2018 [(Lison et al., 2018)](https://www.aclweb.org/anthology/L18-1275/). It uses the dataset creation and evaluation protocols of [ContraPro datasets](https://github.com/ZurichNLP/ContraPro) [(Müller et al., 2018)](https://www.aclweb.org/anthology/W18-6307/), adapted to English-to-French, with some slight modifications to the dataset creation process.
 
