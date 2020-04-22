@@ -1,15 +1,22 @@
 # Large-scale contrastive pronoun test sets for EN-to-FR
 
-This repository contains large-scale contrastive test sets for the evaluation of the machine translation (MT) of anaphoric pronouns 'it' and 'they' from English to French. They use the dataset creation and evaluation protocols of [https://github.com/ZurichNLP/ContraPro](ContraPro datasets) (Müller et al., 2018), adapted to English-to-French, with some slight modifications to the dataset creation process.
+This repository contains a large-scale contrastive test set for the evaluation of the machine translation (MT) of anaphoric pronouns 'it' and 'they' from English to French, created from OpenSubtitles2018 [https://www.aclweb.org/anthology/L18-1275/](Lison et al., 2018). It uses the dataset creation and evaluation protocols of [https://github.com/ZurichNLP/ContraPro](ContraPro datasets) (Müller et al., 2018), adapted to English-to-French, with some slight modifications to the dataset creation process.
 
-There are two datasets, with examples extracted from (i) OpenSubtitles2018 and (ii) UN-corpus.
 
 ## Citation
 
 If use you these test sets, please cite the following paper:
 
+António Lopes, M. Amin Farajian, Rachel Bawden and André T. Martins. 2020. Document-level Neural MT: A Systematic Comparison. In *Proceedings of the 22nd Annual Conference of the European Association for Machine Translation*. Lisbon, Portugal. To appear.
+
 ```
-TODO
+@inproceedings{
+    title={Document-level Neural MT: A Systematic Comparison},
+    authors={António Lopes and M. Amin Farajian and Rachel Bawden and André T. Martins},
+    year={2020},
+    booktitle={Proceedings of the 22nd Annual Conference of the European Association for Machine Translation},
+    address={Lisbon, Portugal}
+}
 ```
 
 ## Brief summary
