@@ -7,12 +7,12 @@ This repository contains a large-scale contrastive test set for the evaluation o
 
 If use you these test sets, please cite the following paper:
 
-António Lopes, M. Amin Farajian, Rachel Bawden and André T. Martins. 2020. Document-level Neural MT: A Systematic Comparison. In *Proceedings of the 22nd Annual Conference of the European Association for Machine Translation*. Lisbon, Portugal. To appear.
+António Lopes, M. Amin Farajian, Rachel Bawden, Michael Zhang and André T. Martins. 2020. Document-level Neural MT: A Systematic Comparison. In *Proceedings of the 22nd Annual Conference of the European Association for Machine Translation*. Lisbon, Portugal. To appear.
 
 ```
 @inproceedings{
     title={Document-level Neural MT: A Systematic Comparison},
-    authors={António Lopes and M. Amin Farajian and Rachel Bawden and André T. Martins},
+    authors={António Lopes and M. Amin Farajian and Rachel Bawden and Michael Zhang and André T. Martins},
     year={2020},
     booktitle={Proceedings of the 22nd Annual Conference of the European Association for Machine Translation},
     address={Lisbon, Portugal}
