@@ -12,7 +12,7 @@ António Lopes, M. Amin Farajian, Rachel Bawden, Michael Zhang and André T. Mar
 ```
 @inproceedings{lopes-document-2020,
     title={Document-level Neural MT: A Systematic Comparison},
-    authors={António Lopes and M. Amin Farajian and Rachel Bawden and Michael Zhang and André T. Martins},
+    author={António Lopes and M. Amin Farajian and Rachel Bawden and Michael Zhang and André T. Martins},
     year={2020},
     booktitle={Proceedings of the 22nd Annual Conference of the European Association for Machine Translation},
     address={Lisbon, Portugal}
