@@ -25,7 +25,7 @@ def get_text_and_context(examples, document_dir, prefix, csize=1):
     # get examples sorted by doc_id
     doc2examples = get_documents_from_examples(examples)
 
-    for doc in doc2examples:
+    for doc in sorted(list(doc2examples.keys())):
         # get document
         docsents = read_document(document_dir, doc)
 
