@@ -46,7 +46,7 @@ The extracted sentences can be found in the `extracted/` folders of each dataset
 
 ```
 cd Opensubs
-`bash setup_opensubs.sh`
+bash scripts/setup_opensubs.sh
 ```
 This script been taken from [https://github.com/ZurichNLP/ContraPro](https://github.com/ZurichNLP/ContraPro) and adapted to English-French.
 This will create in the directory a `documents/` folder with films structured by year
@@ -55,7 +55,7 @@ This will create in the directory a `documents/` folder with films structured by
 2. Extract current sentences and contextual sentences
 
 ```
-python scripts/extract_current_and_context.py JSON_FILE documents/ OUTPUT_PREFIX -c NUM_CONTEXT
+python scripts/extract_current_and_context.py testset-en-fr.json documents/ OUTPUT_PREFIX -c NUM_CONTEXT
 ```
 
 This will produce four files:
